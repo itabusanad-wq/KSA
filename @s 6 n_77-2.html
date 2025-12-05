@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المصور سلطان الداحم | S6N_77</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- Custom Styles for Creative Photographer Theme --- */
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #000000; /* Pure Black for contrast */
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        
+        /* Background texture */
+        .bg-texture {
+            background-image: radial-gradient(circle at 50% 50%, #1a1a1a 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        /* Glassmorphism effect */
+        .glass-effect {
+            background: rgba(0, 0, 0, 0.8); /* Darker background for logo blending */
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card-glass {
+            background: rgba(30, 30, 30, 0.5);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Creative Gradient Text */
+        .animated-gradient-text {
+            background: linear-gradient(to right, #f472b6, #a78bfa, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: textShine 4s linear infinite;
+        }
+
+        @keyframes textShine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        /* Image Hover Zoom */
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 0.75rem;
+            position: relative;
+        }
+        .gallery-item img {
+            transition: transform 0.5s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #444;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #666;
+        }
+    </style>
+</head>
+<body class="bg-texture">
+
+    <!-- Header Navigation -->
+    <header class="glass-effect sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
+            <!-- Logo Section -->
+            <a href="#" class="flex items-center gap-2 group">
+                <!-- Assuming the user saves the image as '1000093220.png' in the same folder -->
+                <img src="@ s 6 n _7 7.png" alt="سلطان الداحم - S6N_77" class="h-16 w-auto object-contain transform group-hover:scale-105 transition duration-300">
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-reverse space-x-8 text-sm font-medium">
+                <a href="#" class="text-white hover:text-pink-400 transition duration-300">الرئيسية</a>
+                <a href="#gallery" class="text-gray-300 hover:text-pink-400 transition duration-300">المعرض</a>
+                <a href="#services" class="text-gray-300 hover:text-pink-400 transition duration-300">خدماتي</a>
+                <a href="#process" class="text-gray-300 hover:text-pink-400 transition duration-300">الحجز</a>
+            </div>
+            <a href="#contact" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full hover:shadow-lg hover:shadow-purple-500/30 transition duration-300 font-bold text-sm transform hover:scale-105">
+                تواصل مع سلطان
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative py-24 md:py-36 overflow-hidden">
+            <!-- Background Glow Element -->
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full pointer-events-none">
+                <div class="absolute top-20 left-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse"></div>
+                <div class="absolute bottom-20 right-1/4 w-96 h-96 bg-pink-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse" style="animation-delay: 2s"></div>
+            </div>
+
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <div class="inline-block px-4 py-1 mb-6 rounded-full border border-gray-700 bg-gray-900/50 backdrop-blur-sm">
+                    <span class="text-pink-400 text-xs font-bold tracking-wider uppercase">استوديو سلطان الداحم | S6N_77</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black mb-6 text-white leading-tight tracking-tight">
+                    بعدستي سترى <br>
+                    <span class="animated-gradient-text">الإبداع والاحتراف</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-10 text-gray-400 max-w-2xl mx-auto font-light">
+                    معكم سلطان الداحم. أقدم لكم تغطية متكاملة للمناسبات والفعاليات بأحدث الكاميرات السينمائية وتقنيات الدرون، لأوثق لحظاتكم بلمسة فنية خالدة.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                    <a href="#gallery" class="w-full md:w-auto bg-white text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-200 transition duration-300">
+                        <i class="fas fa-images mr-2"></i> تصفح أعمالي
+                    </a>
+                    <a href="#contact" class="w-full md:w-auto border border-gray-700 hover:border-pink-500 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-900 transition duration-300">
+                        احجز موعدك
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Preview Section (Masonry Style Grid) -->
+        <section id="gallery" class="py-20 bg-black/50">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-between items-end mb-12">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">لقطات من عدسة سلطان</h2>
+                        <div class="h-1 w-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded"></div>
+                    </div>
+                    <a href="#" class="hidden md:inline-block text-gray-400 hover:text-white transition">شاهد الكل <i class="fas fa-arrow-left mr-1"></i></a>
+                </div>
+
+                <!-- Grid Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 auto-rows-[200px]">
+                    <!-- Large Item -->
+                    <div class="gallery-item md:col-span-2 md:row-span-2 group cursor-pointer relative">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wedding">
+                        <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-6">
+                            <span class="text-pink-400 text-sm font-bold mb-1">احتفالات خاصة</span>
+                            <h3 class="text-white text-xl font-bold">تغطية زواجات ومناسبات</h3>
+                        </div>
+                    </div>
+                    <!-- Standard Item -->
+                    <div class="gallery-item group cursor-pointer relative">
+                        <img src="https://images.unsplash.com/photo-1472653431158-6364773b2a56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Drone Shot">
+                        <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-6">
+                            <span class="text-purple-400 text-sm font-bold mb-1">تصوير جوي</span>
+                            <h3 class="text-white text-lg font-bold">لقطات درون 4K</h3>
+                        </div>
+                    </div>
+                     <!-- Standard Item -->
+                     <div class="gallery-item group cursor-pointer relative">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Event">
+                        <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-6">
+                            <span class="text-blue-400 text-sm font-bold mb-1">فعاليات عامة</span>
+                            <h3 class="text-white text-lg font-bold">مهرجانات واحتفالات</h3>
+                        </div>
+                    </div>
+                    <!-- Wide Item -->
+                    <div class="gallery-item md:col-span-2 group cursor-pointer relative">
+                        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Landscape">
+                        <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-6">
+                            <span class="text-green-400 text-sm font-bold mb-1">طبيعة وسفر</span>
+                            <h3 class="text-white text-lg font-bold">توثيق الرحلات</h3>
+                        </div>
+                    </div>
+                    <!-- Standard Item -->
+                    <div class="gallery-item group cursor-pointer relative">
+                        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Studio">
+                        <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-6">
+                            <span class="text-yellow-400 text-sm font-bold mb-1">استوديو</span>
+                            <h3 class="text-white text-lg font-bold">معدات احترافية</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="py-20 relative">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                     <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">خدمات سلطان الداحم</h2>
+                     <p class="text-gray-400 text-lg">استوديو متكامل يلبي جميع احتياجات التصوير والمونتاج</p>
+                </div>
+                <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Service cards injected via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="py-20 bg-neutral-900/30 border-y border-gray-800">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-12">كيف نغطي مناسبتك؟</h2>
+                <div class="grid md:grid-cols-3 gap-12 relative">
+                    <!-- Connecting Line (Desktop) -->
+                    <div class="hidden md:block absolute top-1/3 left-10 right-10 h-0.5 bg-gradient-to-r from-transparent via-gray-700 to-transparent -z-10"></div>
+
+                    <!-- Step 1 -->
+                    <div class="group">
+                        <div class="relative inline-block mb-6 transform group-hover:scale-110 transition duration-300">
+                            <div class="w-20 h-20 rounded-2xl bg-gray-800 flex items-center justify-center border border-gray-700 shadow-xl relative z-10">
+                                <i class="fas fa-calendar-check text-3xl text-pink-500"></i>
+                            </div>
+                            <div class="absolute inset-0 bg-pink-500 blur-xl opacity-20 group-hover:opacity-40 transition duration-300"></div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">1. التخطيط والحجز</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">نتواصل معك ونحدد نوع الفعالية، ونجهز المعدات المناسبة سواء تصوير أرضي أو جوي.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="group">
+                         <div class="relative inline-block mb-6 transform group-hover:scale-110 transition duration-300">
+                            <div class="w-20 h-20 rounded-2xl bg-gray-800 flex items-center justify-center border border-gray-700 shadow-xl relative z-10">
+                                <i class="fas fa-video text-3xl text-purple-500"></i>
+                            </div>
+                             <div class="absolute inset-0 bg-purple-500 blur-xl opacity-20 group-hover:opacity-40 transition duration-300"></div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">2. التغطية الاحترافية</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">أنا وفريقي نغطي الحدث بكاميرات عالية الدقة وطائرات الدرون لتوثيق كل الزوايا.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="group">
+                         <div class="relative inline-block mb-6 transform group-hover:scale-110 transition duration-300">
+                            <div class="w-20 h-20 rounded-2xl bg-gray-800 flex items-center justify-center border border-gray-700 shadow-xl relative z-10">
+                                <i class="fas fa-film text-3xl text-blue-500"></i>
+                            </div>
+                            <div class="absolute inset-0 bg-blue-500 blur-xl opacity-20 group-hover:opacity-40 transition duration-300"></div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">3. المونتاج والتسليم</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">عمل مونتاج سينمائي (Highlight) ومقاطع كاملة للحفل، وتسليمها بأعلى جودة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer with Booking CTA -->
+        <footer id="contact" class="bg-black border-t border-gray-800 pt-16 pb-8 relative overflow-hidden">
+             <!-- Background Accents -->
+             <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500"></div>
+            
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+                    <div class="text-center md:text-right mb-8 md:mb-0">
+                        <h3 class="text-3xl font-bold text-white mb-2">عندك مناسبة قريبة؟</h3>
+                        <p class="text-gray-400">تواصل مع سلطان الداحم لتوثيق ذكرياتك.</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-4 items-center">
+                        <a href="https://wa.me/966597440002" target="_blank" class="flex items-center gap-3 bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition duration-300">
+                            <span dir="ltr">واتساب</span>
+                            <i class="fab fa-whatsapp text-xl text-green-600"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-8 border-t border-gray-800 pt-12 text-center md:text-right">
+                    <div class="col-span-1 md:col-span-2">
+                        <!-- Footer Logo -->
+                        <a href="#" class="flex items-center justify-center md:justify-start gap-2 mb-4">
+                             <img src="@S" alt="سلطان الداحم - S6N_77" class="h-16 w-auto object-contain">
+                        </a>
+                        <p class="text-gray-500 text-sm leading-relaxed max-w-md mx-auto md:mx-0">
+                            استوديو سلطان الداحم لخدمات التصوير الفوتوغرافي والفيديو. متخصصون في تغطية المناسبات الخاصة والعامة، التصوير الجوي (Drone)، والمونتاج السينمائي.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-white font-bold mb-4">روابط سريعة</h4>
+                        <ul class="space-y-2 text-gray-500 text-sm">
+                            <li><a href="#" class="hover:text-pink-400 transition">أعمالي</a></li>
+                            <li><a href="#" class="hover:text-pink-400 transition">باقات المناسبات</a></li>
+                            <li><a href="#" class="hover:text-pink-400 transition">التصوير الجوي</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-white font-bold mb-4">تواصل معي</h4>
+                        <div class="flex justify-center md:justify-start gap-4">
+                            <a href="https://instagram.com/S6N_77" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-pink-600 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/S6N_77" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-blue-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-red-600 hover:text-white transition duration-300"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center pt-8 mt-8 border-t border-gray-800 text-gray-600 text-xs">
+                    <p>&copy; 2025 سلطان الداحم للتصوير | @S6N_77. جميع الحقوق محفوظة.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // --- Mock Data for Photography Services ---
+        const services = [
+            {
+                title: 'تغطية المناسبات والفعاليات',
+                icon: 'fa-users-viewfinder',
+                color: 'text-pink-500',
+                description: 'تغطية شاملة للمناسبات الخاصة (زواجات) والفعاليات العامة والمهرجانات بفريق محترف.'
+            },
+            {
+                title: 'تصوير جوي (Drone)',
+                icon: 'fa-helicopter', 
+                color: 'text-purple-500',
+                description: 'لقطات جوية مبهرة بدقة 4K باستخدام أحدث طائرات الدرون لإظهار ضخامة وجمال المكان.'
+            },
+            {
+                title: 'استوديو وكاميرات دقيقة',
+                icon: 'fa-camera',
+                color: 'text-blue-500',
+                description: 'نمتلك أحدث الكاميرات عالية الدقة (High Resolution) ومعدات إضاءة احترافية لنتائج سينمائية.'
+            },
+            {
+                title: 'مونتاج سينمائي احترافي',
+                icon: 'fa-clapperboard',
+                color: 'text-yellow-500',
+                description: 'تحرير الفيديو بأحدث البرامج، إضافة مؤثرات، تصحيح ألوان، وإخراج فني يليق بالمناسبة.'
+            }
+        ];
+
+        // --- Function to Render Services ---
+        function renderServices() {
+            const grid = document.getElementById('services-grid');
+            grid.innerHTML = ''; 
+
+            services.forEach(service => {
+                const card = `
+                    <div class="card-glass p-8 rounded-2xl group hover:bg-gray-800/50 transition-all duration-300 border border-gray-800 hover:border-gray-600 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-gray-800 to-transparent opacity-50 rounded-bl-full -mr-10 -mt-10 transition-all group-hover:scale-150"></div>
+                        
+                        <div class="mb-6 relative z-10">
+                            <div class="w-14 h-14 rounded-lg bg-gray-900 flex items-center justify-center border border-gray-700 group-hover:border-gray-500 transition-colors">
+                                <i class="fas ${service.icon} text-2xl ${service.color}"></i>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-white mb-3 relative z-10 group-hover:text-pink-400 transition-colors">${service.title}</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed relative z-10">${service.description}</p>
+                    </div>
+                `;
+                grid.innerHTML += card;
+            });
+        }
+
+        // --- Initial Render ---
+        document.addEventListener('DOMContentLoaded', renderServices);
+
+        // --- Disable Copy/Paste and Right Click (Optional protection for photos) ---
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+    </script>
+</body>
+</html>
+
+
+
+
