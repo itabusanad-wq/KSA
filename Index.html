@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقرير إنجازات التطوع 2025 - جمعية العناية بالمساجد</title>
+    <!-- استدعاء خط "تجوال" العربي من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- استدعاء مكتبة Tailwind CSS للتصميم -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mosque-green': '#0f5132', /* أخضر غامق */
+                        'mosque-light': '#198754',
+                        'gold-accent': '#d4af37', /* ذهبي */
+                    },
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* تأثيرات خاصة */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        .hero-pattern {
+            background-color: #0f5132;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23156640' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .counter-text {
+            font-feature-settings: "tnum";
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <!-- الهيدر (رأس الصفحة) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <!-- مكان الشعار (يمكنك استبدال الرابط برابط شعارك الحقيقي) -->
+                <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center border-2 border-mosque-green overflow-hidden">
+                     <!-- أيقونة مؤقتة للشعار -->
+                    <svg class="w-8 h-8 text-mosque-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-mosque-green leading-tight">جمعية العناية بالمساجد</h1>
+                    <span class="text-xs text-gray-500 block">قسم التطوع</span>
+                </div>
+            </div>
+            <button class="bg-gold-accent hover:bg-yellow-600 text-white text-sm px-5 py-2 rounded-full font-bold transition shadow-md hidden sm:block">
+                تقرير 2025
+            </button>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي (Hero Section) -->
+    <section class="hero-pattern text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-t from-mosque-green to-transparent"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <span class="bg-white/10 text-gold-accent px-4 py-1 rounded-full text-sm font-semibold border border-white/20 mb-4 inline-block backdrop-blur-sm">
+                حصاد الخير والعطاء
+            </span>
+            <h2 class="text-4xl md:text-6xl font-black mb-6 mt-2 leading-tight">
+                إنجازات التطوع <span class="text-gold-accent">2025</span>
+            </h2>
+            <p class="text-lg text-gray-200 max-w-2xl mx-auto mb-10">
+                بفضل الله ثم بجهودكم، حققنا أرقاماً قياسية في خدمة بيوت الله. شكراً لكل يدٍ امتدت بالخير والعطاء.
+            </p>
+        </div>
+    </section>
+
+    <!-- قسم الإحصائيات (الأرقام) -->
+    <section class="container mx-auto px-4 -mt-16 relative z-20 pb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- بطاقة المتطوعين -->
+            <div class="glass-card p-6 rounded-2xl shadow-lg border-t-4 border-mosque-light bg-white text-center group">
+                <div class="w-16 h-16 mx-auto bg-green-50 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-8 h-8 text-mosque-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                </div>
+                <h3 class="text-gray-500 font-medium mb-1">عدد المتطوعين</h3>
+                <div class="text-4xl font-black text-gray-800 counter-text" data-target="484">0</div>
+                <p class="text-xs text-green-600 mt-2 font-bold">+ زيادة سنوية</p>
+            </div>
+
+            <!-- بطاقة الفرص -->
+            <div class="glass-card p-6 rounded-2xl shadow-lg border-t-4 border-mosque-light bg-white text-center group">
+                <div class="w-16 h-16 mx-auto bg-green-50 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-8 h-8 text-mosque-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </div>
+                <h3 class="text-gray-500 font-medium mb-1">الفرص التطوعية</h3>
+                <div class="text-4xl font-black text-gray-800 counter-text" data-target="32">0</div>
+                <p class="text-xs text-gray-400 mt-2">فرصة لخدمة المساجد</p>
+            </div>
+
+            <!-- بطاقة الساعات -->
+            <div class="glass-card p-6 rounded-2xl shadow-lg border-t-4 border-mosque-light bg-white text-center group">
+                <div class="w-16 h-16 mx-auto bg-green-50 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-8 h-8 text-mosque-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <h3 class="text-gray-500 font-medium mb-1">الساعات التطوعية</h3>
+                <div class="text-4xl font-black text-gray-800 counter-text" data-target="28154">0</div>
+                <p class="text-xs text-gray-400 mt-2">ساعة من العطاء</p>
+            </div>
+
+            <!-- بطاقة الرضا (دائري) -->
+            <div class="glass-card p-6 rounded-2xl shadow-lg border-t-4 border-blue-500 bg-white text-center flex flex-col items-center justify-center">
+                <div class="relative w-24 h-24 mb-3">
+                    <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                        <circle class="text-gray-200 stroke-current" stroke-width="8" cx="50" cy="50" r="40" fill="transparent"></circle>
+                        <circle class="text-blue-500 progress-ring__circle stroke-current" stroke-width="8" stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent" stroke-dasharray="251.2" stroke-dashoffset="251.2"></circle>
+                    </svg>
+                    <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                        <span class="text-xl font-black text-blue-600">97.2%</span>
+                    </div>
+                </div>
+                <h3 class="text-gray-500 font-medium">مقياس الرضا</h3>
+            </div>
+        </div>
+
+        <!-- بطاقة العائد الاقتصادي (عرض كامل) -->
+        <div class="mt-6 glass-card p-8 rounded-2xl shadow-xl bg-gradient-to-r from-white to-yellow-50 border border-gold-accent/30 relative overflow-hidden">
+            <div class="absolute top-0 left-0 p-4 opacity-10">
+                <svg class="w-32 h-32 text-gold-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div class="relative z-10 flex flex-col md:flex-row justify-between items-center text-center md:text-right gap-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">العائد الاقتصادي للتطوع</h2>
+                    <p class="text-gray-500">القيمة المالية التقديرية للجهود التطوعية المبذولة</p>
+                </div>
+                <div class="bg-white/80 backdrop-blur px-8 py-4 rounded-xl border border-gold-accent shadow-sm">
+                    <span class="block text-sm text-gray-500 mb-1">الإجمالي بالريال السعودي</span>
+                    <span class="text-4xl md:text-5xl font-black text-gold-accent tracking-tight">639,863</span>
+                    <span class="text-sm font-bold text-gray-400">.64</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="bg-mosque-green text-white py-8 border-t-4 border-gold-accent">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm opacity-80 mb-2">جميع الحقوق محفوظة © جمعية العناية بالمساجد 2025</p>
+            <p class="text-xs opacity-50">تم التصميم بناءً على تقرير قسم التطوع</p>
+        </div>
+    </footer>
+
+    <!-- سكربت حركة الأرقام -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // تحريك الأرقام
+            const counters = document.querySelectorAll('.counter-text');
+            const speed = 200;
+
+            const animateCounters = () => {
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+                        const inc = target / speed;
+
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + inc);
+                            setTimeout(updateCount, 15);
+                        } else {
+                            counter.innerText = target.toLocaleString('en-US'); // تنسيق الرقم بفواصل
+                        }
+                    };
+                    updateCount();
+                });
+            };
+
+            // تحريك دائرة الرضا
+            const circle = document.querySelector('.progress-ring__circle');
+            const radius = circle.r.baseVal.value;
+            const circumference = radius * 2 * Math.PI;
+            
+            circle.style.strokeDasharray = `${circumference} ${circumference}`;
+            circle.style.strokeDashoffset = circumference;
+
+            function setProgress(percent) {
+                const offset = circumference - percent / 100 * circumference;
+                circle.style.strokeDashoffset = offset;
+            }
+
+            // تشغيل الحركات بعد تحميل الصفحة بقليل
+            setTimeout(() => {
+                animateCounters();
+                setProgress(97.26); // نسبة الرضا
+            }, 500);
+        });
+    </script>
+</body>
+</html>
+
+
